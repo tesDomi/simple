@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Ujian</title>
+</head>
+
+<style>
+   body {
+      font-family: sans-serif;
+      background-color: silver;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
+
+   form {
+      width: 50%;
+      border-radius: 10px;
+      /* box-shadow: 1px 1px 4px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 1px 1px 4px;
+      padding: .8rem 0;
+   }
+
+   form fieldset {
+      border-radius: 5%;
+      border: none;
+   }
+
+   form legend {
+      color: blue;
+      font-weight: bold;
+      font-size: 1.5rem;
+   }
+
+   form button {
+      background-color: blue;
+      padding: .4rem .7rem;
+      border-radius: 20px;
+   }
+
+   form a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+   }
+</style>
+
+<body>
+   <form>
+      <fieldset>
+         <!-- Judul -->
+         <legend>Formulir Siswa Baru</legend>
+
+         <!-- input nama -->
+         <p>
+            <label for="nama">Nama : </label>
+            <input type="text" id="nama">
+         </p>
+
+         <!-- input nisn -->
+         <p>
+            <label for="nisn">NISN : </label>
+            <input type="text" id="nisn">
+         </p>
+
+
+         <!-- input tempat lahir -->
+         <p>
+            <label for="tempatlahir">Tempat Lahir : </label>
+            <input type="text" id="tempatlahir">
+         </p>
+
+         <!-- input tanggal lahir -->
+         <p>
+            <label for="tanggallahir">Tanggal Lahir : </label>
+            <input type="datetime-local" name="" id="">
+         </p>
+
+         <!-- input jenis kelamin -->
+         <p>
+            Jenis Kelamin :
+            <input type="radio" id="lk" name="radio">
+            <label for="lk">Laki-laki</label>
+            <input type="radio" id="pr" name="radio">
+            <label for="pr">Perempuan</label>
+         </p>
+
+         <!-- input asal sekolah -->
+         <p>
+            <label for="asalsekolah">Asal Sekolah : </label>
+            <input type="text" id="asalsekolah">
+         </p>
+
+         <!-- input  nomor HP -->
+         <p>
+            <label for="nomorhp">Nomor HP : </label>
+            <input type="number" id="nomorhp">
+         </p>
+
+         <!-- input  alamat email -->
+         <p>
+            <label for="email">Alamat Email : </label>
+            <input type="email" id="email">
+         </p>
+         <hr>
+
+         <!-- input  jurusan -->
+         <p>
+            Pilihan Jurusan :
+            <select>
+               <option value="rpl">RPL</option>
+               <option value="tkj">TKJ</option>
+               <option value="akl">AKL</option>
+               <option value="tbsm">TBSM</option>
+            </select>
+         </p>
+
+         <!-- button -->
+
+         <button type="submit"><a href="kirim.html">KIRIM !</a></button>
+
+
+      </fieldset>
+   </form>
+</body>
+
+</html>
